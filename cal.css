@@ -1,0 +1,73 @@
+body{
+    background-color: rgb(53, 53, 53);
+}
+.grid{
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    gap: 15px;
+    padding: 15px;
+    background-color: #FBF2CF;
+    width: 500px;
+    height: 600px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border: 1px rgb(39, 39, 39) solid ;
+    border-radius: 10px;
+    font-size: 30px;
+    box-shadow: 4px 4px 4px rgb(230, 227, 227) ;
+}
+#screen{
+    grid-row: 1;
+    grid-column: 1 / span 4;
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 30px;
+    height: 90px;
+    background-color: white;
+    border: 3px inset rgb(177, 175, 175);
+    box-shadow: none;
+}
+span:hover{
+    background-color: aliceblue;
+}
+#equal{
+    grid-column: 4;
+    grid-row: 3 / span 4;
+    background-color: #FA7070;
+    color: white;
+    padding-top: 150px;
+}
+#equal:hover{
+    background-color: #fa4343;
+}
+.item{
+    border: 1px solid gray;
+    border-radius: 10px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 20px;
+    background-color: #C6EBC5;
+    box-shadow: 2px 2px 3px gray;
+}
+#add, #sub, #divid, #mult{
+    background-color: #A1C298;
+}
+#add:hover, #sub:hover, #divid:hover, #mult:hover{
+    background-color:#86b878 ;
+}
+#c{
+    background-color: rgb(185, 59, 59);
+}
+#c:hover{
+    background-color: rgb(184, 95, 95);
+}
+.item:hover{
+    background-color: #A1C298;
+}
+span{
+    height: 75px;
+    width: 450px;
+}
